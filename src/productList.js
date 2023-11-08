@@ -33,10 +33,11 @@ function ProductList () {
             <h2 align={"center"}>카테고리별 프로덕트 최저가</h2>
             <div>
                 <table className="App" border={1} align={"center"}>
-
-                    <th>카테고리</th>
-                    <th>브렌드</th>
-                    <th>가격</th>
+                    <thead>
+                        <th>카테고리</th>
+                        <th>브렌드</th>
+                        <th>가격</th>
+                    </thead>
                     <tbody>
                     {inputData &&
                         inputData.map(rowData => (
